@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100"
+   height="100"
+   id="svg3005">
+  <defs
+     id="defs3007" />
+  <metadata
+     id="metadata3010">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-952.36218)"
+     id="layer1">
+    <g
+       transform="translate(-378.57143,324.28574)"
+       id="g3028">
+      <path
+         d="m 452.49202,689.40418 v 0.0392 h 9.65061 v 8.55217 c 0,8.80717 -2.19688,12.22019 -8.31679,12.22019 -5.25684,0 -7.10066,-3.66802 -7.10066,-9.29754 v -11.53367 -33.81639 c 0,-7.45373 3.05996,-9.65062 6.72798,-9.65062 5.98259,0 8.68947,3.43264 8.68947,16.63358 h 14.41709 v -5.62952 c 0,-13.20095 -7.57142,-24.20501 -22.73388,-24.20501 -14.90746,0 -22.2435,10.141 -22.2435,22.61619 v 34.07139 11.41597 c 0,14.06401 8.3168,22.61619 20.30161,22.61619 7.10066,0 10.76868,-2.45189 15.28014,-7.82642 l 2.80496,6.61028 h 7.33604 v -32.81602 -11.94559 h -24.81307 v 11.94559 z"
+         id="path7"
+         style="fill:#e80f1f" />
+      <g
+         transform="matrix(0.19615078,0,0,0.19615078,334.42886,623.14444)"
+         id="g9">
+        <g
+           id="g11">
+          <path
+             d="m 301.1,272 h 22.4 c 29.3,0 45.5,10.6 52.7,31.2 h 70.5 c -7.3,-31.5 -25.6,-50.7 -52.5,-62.6 33.6,-13.5 48.2,-49.9 48.2,-84.7 0,-69 -33.1,-107.1 -107.7,-107.1 H 231.5 V 303.2 H 301 V 272 z m 0,-166 h 26.4 c 30.8,0 45.4,19.6 45.4,57.2 0,33.6 -20.2,51.6 -46.5,51.6 H 301.2 V 106 z"
+             id="path13"
+             style="fill:#e80f1f" />
+          <path
+             d="m 450.3,358 h -69.5 v 30.8 h 0 c 0,0.1 0,0.2 0,0.3 0,40.9 -13.5,62.3 -50.5,62.3 H 301.1 V 358 h -69.5 v 150.5 h 109.9 c 79.1,0 108.8,-50.5 108.8,-117.2 0,-0.9 -0.1,-1.6 -0.1,-2.5 h 0.1 V 358 z"
+             id="path15"
+             style="fill:#e80f1f" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
