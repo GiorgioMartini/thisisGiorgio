@@ -4,15 +4,15 @@ $( document ).ready(function() {
 
 });
 
-var paint;
+var paints = [];
 
-function Paint() {
-  this.x = random(0, width);
-  this.y = random(0, height);
+function Paint(x,y) {
+  this.x = x;
+  this.y = y;
 
   this.update = function() {
-    this.x = random(0, width);
-    this.y = random(0, height);
+    this.x += random(-1,1);
+    this.y += random(-1,1);
   };
 
 	this.show = function () {
@@ -20,20 +20,36 @@ function Paint() {
 	};
 
 
-
 }
 
 function setup() {
-	var canvas = createCanvas(window.innerWidth, window.innerHeight);
+  var width = window.innerWidth,
+      height= window.innerHeight,
+      cols = 10,
+      rows = 10;
+      gridX = 0;
+
+	var canvas = createCanvas(width, height);
   canvas.parent('site-content');
-	paint = new Paint();
+
+  //draw grid
+
+  for(var i = 0; i < cols; i++) {
+    gridX+= width/cols;
+    console.log(gridX);
+    paints.push(new Paint(gridX , random(100,101) ) );
+  }
 }
 
-function draw() {
- background(0);
 
-	paint.update();
-	paint.show();
+function draw() {
+
+  background(0);
+  for (var i = 0; i < paints.length; i++) {
+    paints[i].update();
+    paints[i].show();
+  }
+
 }
 
 /*! VelocityJS.org (1.2.3). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
