@@ -28,18 +28,21 @@ function setup() {
       cols = 10,
       rows = 10;
       gridX = 0;
+      gridY = 0;
 
 	var canvas = createCanvas(width, height);
   canvas.parent('site-content');
 
   //draw grid
-
-  for(var i = 0; i < cols; i++) {
-    gridX+= width/cols;
-    console.log(gridX);
-    paints.push(new Paint(gridX , random(100,101) ) );
+  for(var i = 0; i < cols; i++)
+    for (var j = 0; j < rows; j++) {
+      gridX+= width/cols;
+      gridY+= height/rows;
+      paints.push(new Paint(gridX , gridY ) );
+    }
   }
-}
+
+
 
 
 function draw() {
