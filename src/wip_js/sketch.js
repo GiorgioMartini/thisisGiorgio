@@ -1,49 +1,61 @@
-var paints = [];
+var paints = [],
+    grid = [[],[]];
+
+
 
 function Paint(x,y) {
   this.x = x;
   this.y = y;
 
-  this.update = function() {
-    this.x += random(-1,1);
-    this.y += random(-1,1);
+  this.moveRandomly = function() {
+    this.x += random(-0.3,0.3);
+    this.y += random(-0.3,0.3);
   };
 
 	this.show = function () {
-		ellipse(this.x,this.y,10,10);
+    noStroke();
+
+    fill('#4FEFB4')
+    var randomAlpha = random(1),
+        randomDiameter = random(1,10);
+        //rbga = 'rgba(79, 239, 180, ' + randomAlpha.toString() + ')';
+
+  	ellipse(this.x,this.y,randomDiameter,randomDiameter);
 	};
 
 
 }
 
 function setup() {
-  var width = window.innerWidth,
-      height= window.innerHeight,
-      cols = 10,
-      rows = 10;
-      gridX = 0;
-      gridY = 0;
 
-	var canvas = createCanvas(width, height);
-  canvas.parent('site-content');
+  frameRate(1);
 
-  //draw grid
-  for(var i = 0; i < cols; i++)
-    for (var j = 0; j < rows; j++) {
-      gridX+= width/cols;
-      gridY+= height/rows;
-      paints.push(new Paint(gridX , gridY ) );
+  var width = window.innerWidth ,
+      height = window.innerHeight - document.getElementsByClassName('mob-menu')[0].offsetHeight,
+      cols = 20,
+      rows = 20,
+      stepX = width/cols,
+      stepY = height/rows,
+      canvas = createCanvas(width, height);
+
+      canvas.parent('site-content');
+
+  for(var i = 1 ; i < cols; i++){
+    for (var j = 1; j < rows; j++) {
+      paints.push(new Paint(  stepX * i , stepY * j ) );
     }
   }
+
+}
+
 
 
 
 
 function draw() {
 
-  background(0);
+  background('#071619');
   for (var i = 0; i < paints.length; i++) {
-    paints[i].update();
     paints[i].show();
   }
 
